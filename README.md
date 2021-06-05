@@ -1,0 +1,2 @@
+# pets-app
+Exploring GraphQL
