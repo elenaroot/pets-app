@@ -42,13 +42,14 @@ const Mutation = {
         if (!userToUpdate) {
             throw new Error(`User with ${id} id is not found.`);
         }
-        if (typeof data.name === 'string') {
-            db.users.update(userToUpdate, userToUpdate.name = data.name);
+        if (data) {
+            if (typeof data.name === 'string') {
+                db.users.update(userToUpdate, userToUpdate.name = data.name);
+            }
+            if (typeof data.lastName === 'string') {
+                db.users.update(userToUpdate, userToUpdate.lastName = data.lastName);
+            }
         }
-        if (typeof data.lastName === 'string') {
-            db.users.update(userToUpdate, userToUpdate.lastName = data.lastName);
-        }
-        console.log(petData)
         if (petData) {
 
             var petUser = db.pets.find(({ userId }) => userId === id);

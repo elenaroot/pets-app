@@ -7,7 +7,7 @@ petOwners: [PetUser]
 type Mutation {
   addUser(input: AddUserInput, petInput: [PetInput]): User!
   deleteUser(id: String!): User!
-  updateUser(id: String, data: UpdateUserInput!, petData:[PetInput], toReplace: Boolean ): User!
+  updateUser(id: String, data: UpdateUserInput, petData:[PetInput], toReplace: Boolean ): User!
 }
 
 type User {
