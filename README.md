@@ -1,7 +1,4 @@
 # pets-app
-Exploring GraphQL
-
-# pets-app
 
 ## Purpose
 Home assignment. Create an app using JS and GraphQL<br/>
