@@ -1,0 +1,28 @@
+{
+  "dfb71c26-6c2c-4a6f-94f6-16406c1ef351": [
+    {
+      "kind": "Dog",
+      "name": "Barky"
+    }
+  ],
+  "8a877a9c-581c-41d9-8422-dda24acc282a": [
+    {
+      "kind": "Cat",
+      "name": "Meowy"
+    },
+    {
+      "kind": "Cat",
+      "name": "Sylvester"
+    }
+  ],
+  "97724d13-0387-479a-b108-80b1181912cd": [
+    {
+      "kind": "Alligator",
+      "name": "Snappy"
+    },
+    {
+      "kind": "Bird",
+      "name": "Tweety"
+    }
+  ]
+}

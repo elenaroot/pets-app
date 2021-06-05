@@ -1,0 +1,51 @@
+type Query {
+users: [User]
+user(id: String): User
+petOwners: [PetUser]
+}
+
+type Mutation {
+  addUser(input: AddUserInput, petInput: [PetInput]): User!
+  deleteUser(id: String!): User!
+  updateUser(id: String, data: UpdateUserInput!, petData:[PetInput], toReplace: Boolean ): User!
+}
+
+type User {
+  id: String!
+  name: String!
+  lastName: String!
+  pets: [Pet]
+}
+
+type PetUser {
+  userId: String!
+  pets: [Pet]
+}
+
+type Pet {
+  kind: PetKind
+  name: String
+}
+
+enum PetKind {
+  Alligator
+  Bird
+  Cat
+  Dog
+}
+
+input AddUserInput {
+  id: String!
+  name: String!
+  lastName: String!
+}
+
+input PetInput {
+  name: String
+  kind: PetKind
+}
+
+input UpdateUserInput {
+  name: String
+  lastName: String
+}
